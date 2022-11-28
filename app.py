@@ -3,6 +3,7 @@ import pickle
 import pandas as pd
 
 import numpy as np
+import sklearn
 
 pipe = pickle.load(open('model.pkl','rb'))
 
