@@ -69,13 +69,13 @@ city = st.selectbox('Select city',sorted(cities))
 col3,col4,col5 = st.columns(3)
 
 with col3:
-    current_score = st.number_input('Current Score')
+    current_score = st.number_input('Current Score', min_value=0)
 with col4:
-    overs = st.number_input('Overs done(works for over>5)')
+    overs = st.number_input('Overs done(works for over>5)', min_value=5, max_value=19)
 with col5:
-    wickets = st.number_input('Wickets out')
+    wickets = st.number_input('Wickets out', min_value=0,max_value=9)
 
-last_five = st.number_input('Runs scored in last 5 overs')
+last_five = st.number_input('Runs scored in last 5 overs', min_value=0)
 
 if st.button('Predict Score'):
     balls_left = 120 -(overs*6)
