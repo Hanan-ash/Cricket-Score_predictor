@@ -73,7 +73,7 @@ with col3:
 with col4:
     overs = st.number_input('Overs done(works for over>5)', min_value=5, max_value=19)
 with col5:
-    wickets = st.number_input('Wickets out', min_value=0,max_value=9)
+    wickets = st.number_input('Wickets out', min_value=0,max_value=10)
 
 last_five = st.number_input('Runs scored in last 5 overs', min_value=0)
 
