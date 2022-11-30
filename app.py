@@ -51,7 +51,7 @@ cities = ['Colombo',
  'Christchurch',
  'Trinidad']
 
-st.title('T20 Cricket Score Predictor System')
+st.title('T20 Cricket Score Predictor')
 
 col1, col2 = st.columns(2)
 
