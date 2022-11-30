@@ -60,6 +60,9 @@ with col1:
 
 with col2:
     bowling_team = st.selectbox('Select Bowling Team', sorted(teams))
+    if batting_team == bowling_team:
+     print('Please Choose different teams')
+
 
 city = st.selectbox('Select city',sorted(cities))
 
