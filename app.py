@@ -2,7 +2,6 @@ import streamlit as st
 import pickle
 import pandas as pd
 
-
 pipe = pickle.load(open('model.pkl','rb'))
 
 teams = ['Australia',
