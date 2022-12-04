@@ -53,18 +53,18 @@ cities = ['Colombo',
 
 st.title('T20 Cricket Score Predictor')
 
-col1, col2 = st.columns(2)
+col1, col2, col3 = st.columns(3)
 
 with col1:
     batting_team = st.selectbox('Select Batting Team',sorted(teams))
 
 with col2:
     bowling_team = st.selectbox('Select Bowling Team', sorted(teams))
-    if batting_team == bowling_team:
-     print('Please Choose different teams')
+if batting_team == bowling_team:
+ st.error('Please Choose different teams')
 
-
-city = st.selectbox('Select city',sorted(cities))
+with col3:
+ city = st.selectbox('Select city',sorted(cities))
 
 col3,col4,col5 = st.columns(3)
 
